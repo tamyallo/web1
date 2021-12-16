@@ -1,118 +1,153 @@
 <!DOCTYPE html>
-<html lang=es dir=LTR>
-    <!-- Cabecera oculta del documento web -->
-    <head>
-        <!-- Juego de caracteres de casi todos los idiomas humanos (incluidos ñ, tildes ...) -->
-        <meta charset=utf-8 />
-        <!-- Escala inicial y renderizado _responsive_ por el ancho del dispositivo -->
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <!-- Compatibilidad con Microsoft Explorer -->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <!-- Indéxame y sígueme -->
-        <meta name="robots" content="Index, Follow" />
-        <!-- Breve descripción del sitio que se verá en los resultados de búsqueda -->
-        <meta name="description" content="Web del curso IFCD0110 de Confección y Publicación de Páginas Web. Aprende HTML5, CSS Y JAVASCRIPT con nosotros. Somos los mejores." />
-        <!-- Ruta a las hojas de estilos -->
-        <link rel="stylesheet" type="text/css" href="../css/basicos.css" />
-        <!-- Ruta al favicon -->
-    	<link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/vnd.microsoft.icon" />
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXX-n"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'UA-XXXX-n');
-        </script>
-        <!-- Título de la pestaña -->
-        <title> IFCD0110 | CSS </title>
-    </head>
-
-    <!-- Cuerpo visible del documento web -->
-    <body>
-        <header>
-            <a href="../index.html" title="Página Principal">
-                <figure>
-                	<img src="../IMAGES/logohtml100.jpg" alt="Logo de mi Web">
-                </figure>
-                <h1>Proyecto del Curso de Confección y Publicación de Páginas Web </h1>
-            </a>
-            <p class="pechado">Proyecto web del curso IFCD0110</p>
-        </header>
-        <!-- Menú de navegación principal del sitio -->
-        <nav>
-            <h2 class="pechado">Menú principal</h2>
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li> Categorías
-                	<ul>
-                		<li>
-                			<a href="html5.html">HTML5</a>
-                		</li>
-                		<li>
-                			<a href="css.html">CSS</a>
-                		</li>
-                		<li>
-                			<a href="js.html">JAVASCRIPT</a>
-                		</li>
-                        <li>
-                            <a href="loremipsum.html">LOREMIPSUM</a>
-                        </li>
-                	</ul>
-                  
-                </li>
-                <li>
-                    <a href="../PAGES/nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="../PAGES/contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- Contenido principal de la página web -->
-        <main>
-            <section>
-                <h2>Título de la sección</h2>
-                <article>
-                    <h3>HTML5 Y CSS</h3>
-                    <p>
-                    	Originalmente, las páginas HTML sólo incluían información sobre sus contenidos de texto e imagenes. 
-						Con el desarrollo del estándar HTML, las páginas empezaron a incluir también información sobre el aspecto de sus contenidos: 
-						tipos de letra, colores y márgenes.
-					</p>
-                    <p>
-                    	La posterior aparición de tecnologías como JavaScript, provocaron que las páginas HTML también incluyeran el código de las aplicaciones (llamadas scripts) que se utilizan para crear páginas web dinámicas.
-                	</p>
-                	<a href="https://www.google.com/" title="Este es el enlace de Tamara para ir a Google" target="_blank" rel="nofollow"> Llévame a Google </a>
-                </article>
-                <article>
-                    <h3>Título del artículo</h3>
-                    <p>Párrafo 1</p>
-                    <p>Párrafo 2</p>
-                </article>
-                <!-- Pie de la sección -->
-                <footer></footer>
-            </section>
-            <aside>
-                <h2>Título de la barra lateral</h2>
-                <nav>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Apuntes de clase sobre los elementos HTML5 semántico" />
+    <link rel="stylesheet" type="text/css" href="../css/basicos.css">
+    <title>Elementos HTML5</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html" title="Inicio">
+            <figure>
+                <img src="../IMAGES/logohtml300.jpg" alt="El logotipo de mi Web son los 3 logos de HTML5, CSS Y Javasript" >
+            </figure>
+            <h1>Características HTML5 | 
+            IFCD0110</h1>
+        </a>
+    </header>
+    <nav>
+        <h2>Menú Principal</h2>
+        <ul>
+            <li>Categorías
+                <ul>
+                    <li>
+                        <a href="html5.html">HTML5</a>
+                    </li>
+                    <li>
+                        <a href="css.html">JavaScript</a>
+                    </li>
+                    <li>
+                        <a href="js.html">Lorem Ipsum</a>
+                    </li>
+                    <li>
+                        <a href="loremipsum.html">CSS</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="../PAGES/nosotros.html">Nosotros</a>
+            </li>
+            <li>
+                <a href="../PAGES/contacto.html">Contacto</a>
+            </li>
+            
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Marcado de Texto</h2>
+            <article>
+                <h3 id="enfasis">Énfasis "em"</h3>
+                <p>
+                     <strong>El elemento em</strong>
+                </p>
+                <p>
+                    Cuando queremos dar énfasis al lenguaje hablado, acentuamos ciertas palabras y así alteramos sutilmente el significado de lo que decimos. <br> De manera similar, en el lenguaje escrito ponemos palabras en cursiva para destacarlas. Por ejemplo, las dos siguientes frases tienen diferente significado:
+                </p>
+                <p>
+                    Me alegro de que no llegues tarde.
+                </p>
+                <p>
+                    Me <em>alegro</em> de que no llegues <em>tarde</em>.
+                </p>
+                <p>
+                    La primera frase suena aliviada porque la persona no llega tarde. Por el contrario, la segunda suena sarcástica y un tanto pasivo-agresiva, expresa molestia porque la persona ha llegado algo tarde.
+                </p>
+            </article>
+            <article>
+                <h3 id="importancia">Importancia "strong"</h3>
+                <p>
+                     <strong>El elemento strong</strong>
+                </p>
+                <p>
+                    Para enfatizar palabras importantes al hablar solemos acentuarlas, y al escribir lo hacemos en estilo negrita. Por ejemplo:
+                </p>
+                <p>
+                    Cuento contigo. <strong>¡No llegues tarde!</strong>
+                </p>
+                <p>
+                    En HTML usamos el elemento strong
+                     (importancia fuerte) para marcar tales expresiones. El documento resulta entonces más útil, y de nuevo los lectores de pantalla reconocen estos elementos y el tono de voz cambia a uno más fuerte.
+                </p>
+            </article>
+            <article>
+                <h3 id="cursiva">Cursiva, negrita y subrayado</h3>
+                <p>
+                    Los elementos  
+                </p>
+                <p>
                     <ul>
-                        <li><a href="#">Ir al artículo 1</a></li>
-                        <li><a href="#">Ir al artículo 2</a></li>
-                        <li><a href="#">Ir al artículo 3</a></li>
-                        <li><a href="#">Ir al artículo 4</a></li>
+                        <li>
+                            b (negrita o «bold»)
+                        </li>
+                        <li>
+                            i (cursiva o «italic»)
+                        </li>
+                        <li>
+                            u (subrayado o «underline»)
+                        </li>
                     </ul>
-                </nav>
-            </aside>
-        </main>
-        <!-- Pie de la página web -->
-        <footer></footer>
-    </body>
+                </p>
+                <p>
+                    surgieron heredados de los lenguajes de marcado de salida por impresora y de las primeras pantallas (fondo negro y letras verdes), cuando apenas se admitía el CSS, para mostrar textos en negrita, cursiva o subrayado.
+                </p>
+                <p>
+                    Elementos como estos, que solo afectan a la presentación y no a la semántica, se conocen como elementos de presentación y <strong>no se deberían</strong> usar porque, como hemos visto, la semántica es muy importante para la accesibilidad y el SEO, entre otros aspectos.
+                </p>
+                <p>
+                    HTML5 redefinió los elementos b, i y u con roles semánticos nuevos confusos, muy específicos y tendentes a desaparecer (si están ya obsoletos): 
+                </p>
+                <p>
+                    <ul>
+                        <li>
+                            <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/i" target="_blank">i</a> se redefine para transmitir el significado que tradicionalmente tenía la itálica: extranjerismos, clasificaciones taxonómicas, conceptos técnicos, un pensamiento...
+                        </li>
+                        <li>
+                            <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/b" target="_blank">b</a> se redefine para transmitir el significado que tradicionalmente transmite la negrita: palabras clave, nombres de productos, frases principales...
+                        </li>
+                        <li>
+                            <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/u" target="_blank">u</a> se redefine para transmitir el significado que tradicionalmente conlleva el subrayado: nombres propios, errores ortográficos...
+                        </li>
+                    </ul>
+                </p>
+            </article>
+        </section>
+        <aside>
+            <h2>Menú Lateral</h2>
+            <nav>
+                <h3>Menú de Navegación</h3>
+                <ul>
+                    <li>
+                        <a href="#enfasis">Artículo 1</a>
+                    </li>
+                    <li>
+                        <a href="#importancia">Artículo 2</a>
+                    </li>
+                    <li>
+                        <a href="#cursiva">Artículo 3</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </aside>
+    </main>
+    <footer>
+        <h2>Pié de Página</h2>
+        <p>En construcción...</p>
+    </footer>
+</body>
 </html>
-
-
 
 
