@@ -1,47 +1,89 @@
 <!DOCTYPE html>
 <html lang="es" dir="LTR">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estilos css</title>
     <style>
+        /* Selector universal */
         * {
             margin: 0;
             padding: 0;
             background-color: pink;
         }
-        header h1 {
+
+        * {
+            color: red;
+        }
+        /* Esto anula y sustituye lo anterior  */
+        
+        h1, h2, h3, h4, h5, h6 {
+            color: black;
+        }
+        
+        li, a, p {
+            color: dimgrey;
+        }
+        
+        
+         header h1 {
+            /* La propiedad height establece el alto */ 
             height: 50px;
+            /* La propiedad padding es el relleno */
             padding: 8px;
+            /* Es el color de fondo */
             background-color: gray;
         }
+
         nav {
+            /* Esto es un borde de 1px, liso en color rojo */
             border: 1px solid red;
         }
+
         article {
+            /* Esto establece el ancho de todos los article */
             width: 40%;
+            /* Esto estable el relleno de todos los article */
             padding: 10px;
+            /* Esto estable el margen de todos los article */
             margin: 3%;
+            /* Esto estable el borde de todos los article */
             border: 1px solid black;
         }
-        article, article p, article h2 {
+
+        article,
+        article p,
+        article h2 {
+            /* Esto establece el color del fondo blanco para: */
+            /* todos los article, todos los párrafos herederos de un article */
+            /* y todos los h2 herederos de un article */
             background-color: white
         }
+
         footer {
+            /* Esto establece el alto del footer en 80px*/
             height: 80px;
+            /* Esto establece el alto de la línea de texto */ 
+            /* como le ponemos el mismo que el height */
+            /* centramos una línea de texto verticalmente */
             line-height: 80px;
+            /* Esto establece el relleno del footer en 10px */
             padding: 10px;
             text-align: center;
             background-color: black;
             color: white;
         }
+
     </style>
 </head>
+
 <body>
     <header>
         <h1>Mis Primeros Estilos</h1>
     </header>
     <nav>
+       <h2>Menú Principal</h2>
         <ul>
             <li>
                 <a href="../index.html">Inicio</a>
@@ -50,48 +92,81 @@
                 <a href="../PAGES/nosotros.html">Nosotros</a>
             </li>
             <li>
-               <a href="../PAGES/contacto.html">Contacto</a> 
+                <a href="../PAGES/contacto.html">Contacto</a>
             </li>
         </ul>
     </nav>
     <main>
-        <article>
-            <h2>Lorem 1</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Convallis a cras semper auctor neque vitae tempus. Etiam erat velit scelerisque in dictum non consectetur a. Odio ut sem nulla pharetra diam sit amet nisl. Nunc aliquet bibendum enim facilisis gravida neque. Sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus. Aenean pharetra magna ac placerat vestibulum lectus. Eget felis eget nunc lobortis mattis aliquam. Sem fringilla ut morbi tincidunt augue interdum velit. Feugiat in fermentum posuere urna nec tincidunt praesent. Pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Odio tempor orci dapibus ultrices in iaculis nunc. Semper viverra nam libero justo laoreet sit. Etiam erat velit scelerisque in dictum non consectetur a erat. Orci ac auctor augue mauris. Neque viverra justo nec ultrices dui sapien.
-            </p>
-            <p>
-                Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Ut sem nulla pharetra diam sit amet nisl. Gravida neque convallis a cras semper auctor. Quisque id diam vel quam elementum pulvinar. Sit amet consectetur adipiscing elit ut aliquam. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean. Lectus arcu bibendum at varius vel pharetra vel turpis. Amet nisl suscipit adipiscing bibendum est. Est sit amet facilisis magna. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Sollicitudin tempor id eu nisl nunc mi. Placerat in egestas erat imperdiet sed euismod nisi porta. Vitae et leo duis ut. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Tellus in hac habitasse platea dictumst vestibulum rhoncus est. Enim sed faucibus turpis in eu mi bibendum. Eget felis eget nunc lobortis mattis aliquam. Mattis molestie a iaculis at erat pellentesque adipiscing commodo elit. Id neque aliquam vestibulum morbi blandit cursus.
-            </p>
-            
-        </article>
-        <article>
-            <h2>Lorem 2</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Convallis a cras semper auctor neque vitae tempus. Etiam erat velit scelerisque in dictum non consectetur a. Odio ut sem nulla pharetra diam sit amet nisl. Nunc aliquet bibendum enim facilisis gravida neque. Sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus. Aenean pharetra magna ac placerat vestibulum lectus. Eget felis eget nunc lobortis mattis aliquam. Sem fringilla ut morbi tincidunt augue interdum velit. Feugiat in fermentum posuere urna nec tincidunt praesent. Pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Odio tempor orci dapibus ultrices in iaculis nunc. Semper viverra nam libero justo laoreet sit. Etiam erat velit scelerisque in dictum non consectetur a erat. Orci ac auctor augue mauris. Neque viverra justo nec ultrices dui sapien.  
-            </p>
-            <p>
-               Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Ut sem nulla pharetra diam sit amet nisl. Gravida neque convallis a cras semper auctor. Quisque id diam vel quam elementum pulvinar. Sit amet consectetur adipiscing elit ut aliquam. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean. Lectus arcu bibendum at varius vel pharetra vel turpis. Amet nisl suscipit adipiscing bibendum est. Est sit amet facilisis magna. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Sollicitudin tempor id eu nisl nunc mi. Placerat in egestas erat imperdiet sed euismod nisi porta. Vitae et leo duis ut. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Tellus in hac habitasse platea dictumst vestibulum rhoncus est. Enim sed faucibus turpis in eu mi bibendum. Eget felis eget nunc lobortis mattis aliquam. Mattis molestie a iaculis at erat pellentesque adipiscing commodo elit. Id neque aliquam vestibulum morbi blandit cursus. 
-            </p>
-        </article>
-        <article>
-            <h2>Lorem 3</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Convallis a cras semper auctor neque vitae tempus. Etiam erat velit scelerisque in dictum non consectetur a. Odio ut sem nulla pharetra diam sit amet nisl. Nunc aliquet bibendum enim facilisis gravida neque. Sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus. Aenean pharetra magna ac placerat vestibulum lectus. Eget felis eget nunc lobortis mattis aliquam. Sem fringilla ut morbi tincidunt augue interdum velit. Feugiat in fermentum posuere urna nec tincidunt praesent. Pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Odio tempor orci dapibus ultrices in iaculis nunc. Semper viverra nam libero justo laoreet sit. Etiam erat velit scelerisque in dictum non consectetur a erat. Orci ac auctor augue mauris. Neque viverra justo nec ultrices dui sapien.  
-            </p>
-            <p>
-               Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Ut sem nulla pharetra diam sit amet nisl. Gravida neque convallis a cras semper auctor. Quisque id diam vel quam elementum pulvinar. Sit amet consectetur adipiscing elit ut aliquam. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean. Lectus arcu bibendum at varius vel pharetra vel turpis. Amet nisl suscipit adipiscing bibendum est. Est sit amet facilisis magna. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Sollicitudin tempor id eu nisl nunc mi. Placerat in egestas erat imperdiet sed euismod nisi porta. Vitae et leo duis ut. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Tellus in hac habitasse platea dictumst vestibulum rhoncus est. Enim sed faucibus turpis in eu mi bibendum. Eget felis eget nunc lobortis mattis aliquam. Mattis molestie a iaculis at erat pellentesque adipiscing commodo elit. Id neque aliquam vestibulum morbi blandit cursus.   
-            </p>
-        </article>
-        <article>
-            <h2>Lorem 4</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Convallis a cras semper auctor neque vitae tempus. Etiam erat velit scelerisque in dictum non consectetur a. Odio ut sem nulla pharetra diam sit amet nisl. Nunc aliquet bibendum enim facilisis gravida neque. Sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus. Aenean pharetra magna ac placerat vestibulum lectus. Eget felis eget nunc lobortis mattis aliquam. Sem fringilla ut morbi tincidunt augue interdum velit. Feugiat in fermentum posuere urna nec tincidunt praesent. Pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Odio tempor orci dapibus ultrices in iaculis nunc. Semper viverra nam libero justo laoreet sit. Etiam erat velit scelerisque in dictum non consectetur a erat. Orci ac auctor augue mauris. Neque viverra justo nec ultrices dui sapien.   
-            </p>
-            <p>
-               Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Ut sem nulla pharetra diam sit amet nisl. Gravida neque convallis a cras semper auctor. Quisque id diam vel quam elementum pulvinar. Sit amet consectetur adipiscing elit ut aliquam. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean. Lectus arcu bibendum at varius vel pharetra vel turpis. Amet nisl suscipit adipiscing bibendum est. Est sit amet facilisis magna. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Sollicitudin tempor id eu nisl nunc mi. Placerat in egestas erat imperdiet sed euismod nisi porta. Vitae et leo duis ut. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Tellus in hac habitasse platea dictumst vestibulum rhoncus est. Enim sed faucibus turpis in eu mi bibendum. Eget felis eget nunc lobortis mattis aliquam. Mattis molestie a iaculis at erat pellentesque adipiscing commodo elit. Id neque aliquam vestibulum morbi blandit cursus.    
-            </p>
-        </article>
+        <section></section>
+        <section>
+            <article>
+                <h2>Lorem 1</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Convallis a cras semper auctor neque vitae tempus. Etiam erat velit scelerisque in dictum non consectetur a. Odio ut sem nulla pharetra diam sit amet nisl. Nunc aliquet bibendum enim facilisis gravida neque. Sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus. Aenean pharetra magna ac placerat vestibulum lectus. Eget felis eget nunc lobortis mattis aliquam. Sem fringilla ut morbi tincidunt augue interdum velit. Feugiat in fermentum posuere urna nec tincidunt praesent. Pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Odio tempor orci dapibus ultrices in iaculis nunc. Semper viverra nam libero justo laoreet sit. Etiam erat velit scelerisque in dictum non consectetur a erat. Orci ac auctor augue mauris. Neque viverra justo nec ultrices dui sapien.
+                </p>
+                <p>
+                    Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Ut sem nulla pharetra diam sit amet nisl. Gravida neque convallis a cras semper auctor. Quisque id diam vel quam elementum pulvinar. Sit amet consectetur adipiscing elit ut aliquam. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean. Lectus arcu bibendum at varius vel pharetra vel turpis. Amet nisl suscipit adipiscing bibendum est. Est sit amet facilisis magna. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Sollicitudin tempor id eu nisl nunc mi. Placerat in egestas erat imperdiet sed euismod nisi porta. Vitae et leo duis ut. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Tellus in hac habitasse platea dictumst vestibulum rhoncus est. Enim sed faucibus turpis in eu mi bibendum. Eget felis eget nunc lobortis mattis aliquam. Mattis molestie a iaculis at erat pellentesque adipiscing commodo elit. Id neque aliquam vestibulum morbi blandit cursus.
+                </p>
+
+            </article>
+            <article>
+                <h2>Lorem 2</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Convallis a cras semper auctor neque vitae tempus. Etiam erat velit scelerisque in dictum non consectetur a. Odio ut sem nulla pharetra diam sit amet nisl. Nunc aliquet bibendum enim facilisis gravida neque. Sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus. Aenean pharetra magna ac placerat vestibulum lectus. Eget felis eget nunc lobortis mattis aliquam. Sem fringilla ut morbi tincidunt augue interdum velit. Feugiat in fermentum posuere urna nec tincidunt praesent. Pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Odio tempor orci dapibus ultrices in iaculis nunc. Semper viverra nam libero justo laoreet sit. Etiam erat velit scelerisque in dictum non consectetur a erat. Orci ac auctor augue mauris. Neque viverra justo nec ultrices dui sapien.
+                </p>
+                <p>
+                    Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Ut sem nulla pharetra diam sit amet nisl. Gravida neque convallis a cras semper auctor. Quisque id diam vel quam elementum pulvinar. Sit amet consectetur adipiscing elit ut aliquam. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean. Lectus arcu bibendum at varius vel pharetra vel turpis. Amet nisl suscipit adipiscing bibendum est. Est sit amet facilisis magna. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Sollicitudin tempor id eu nisl nunc mi. Placerat in egestas erat imperdiet sed euismod nisi porta. Vitae et leo duis ut. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Tellus in hac habitasse platea dictumst vestibulum rhoncus est. Enim sed faucibus turpis in eu mi bibendum. Eget felis eget nunc lobortis mattis aliquam. Mattis molestie a iaculis at erat pellentesque adipiscing commodo elit. Id neque aliquam vestibulum morbi blandit cursus.
+                </p>
+            </article>
+            <article>
+                <h2>Lorem 3</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Convallis a cras semper auctor neque vitae tempus. Etiam erat velit scelerisque in dictum non consectetur a. Odio ut sem nulla pharetra diam sit amet nisl. Nunc aliquet bibendum enim facilisis gravida neque. Sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus. Aenean pharetra magna ac placerat vestibulum lectus. Eget felis eget nunc lobortis mattis aliquam. Sem fringilla ut morbi tincidunt augue interdum velit. Feugiat in fermentum posuere urna nec tincidunt praesent. Pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Odio tempor orci dapibus ultrices in iaculis nunc. Semper viverra nam libero justo laoreet sit. Etiam erat velit scelerisque in dictum non consectetur a erat. Orci ac auctor augue mauris. Neque viverra justo nec ultrices dui sapien.
+                </p>
+                <p>
+                    Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Ut sem nulla pharetra diam sit amet nisl. Gravida neque convallis a cras semper auctor. Quisque id diam vel quam elementum pulvinar. Sit amet consectetur adipiscing elit ut aliquam. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean. Lectus arcu bibendum at varius vel pharetra vel turpis. Amet nisl suscipit adipiscing bibendum est. Est sit amet facilisis magna. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Sollicitudin tempor id eu nisl nunc mi. Placerat in egestas erat imperdiet sed euismod nisi porta. Vitae et leo duis ut. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Tellus in hac habitasse platea dictumst vestibulum rhoncus est. Enim sed faucibus turpis in eu mi bibendum. Eget felis eget nunc lobortis mattis aliquam. Mattis molestie a iaculis at erat pellentesque adipiscing commodo elit. Id neque aliquam vestibulum morbi blandit cursus.
+                </p>
+            </article>
+            <article>
+                <h2>Lorem 4</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Convallis a cras semper auctor neque vitae tempus. Etiam erat velit scelerisque in dictum non consectetur a. Odio ut sem nulla pharetra diam sit amet nisl. Nunc aliquet bibendum enim facilisis gravida neque. Sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus. Aenean pharetra magna ac placerat vestibulum lectus. Eget felis eget nunc lobortis mattis aliquam. Sem fringilla ut morbi tincidunt augue interdum velit. Feugiat in fermentum posuere urna nec tincidunt praesent. Pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Odio tempor orci dapibus ultrices in iaculis nunc. Semper viverra nam libero justo laoreet sit. Etiam erat velit scelerisque in dictum non consectetur a erat. Orci ac auctor augue mauris. Neque viverra justo nec ultrices dui sapien.
+                </p>
+                <p>
+                    Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Ut sem nulla pharetra diam sit amet nisl. Gravida neque convallis a cras semper auctor. Quisque id diam vel quam elementum pulvinar. Sit amet consectetur adipiscing elit ut aliquam. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean. Lectus arcu bibendum at varius vel pharetra vel turpis. Amet nisl suscipit adipiscing bibendum est. Est sit amet facilisis magna. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Sollicitudin tempor id eu nisl nunc mi. Placerat in egestas erat imperdiet sed euismod nisi porta. Vitae et leo duis ut. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Tellus in hac habitasse platea dictumst vestibulum rhoncus est. Enim sed faucibus turpis in eu mi bibendum. Eget felis eget nunc lobortis mattis aliquam. Mattis molestie a iaculis at erat pellentesque adipiscing commodo elit. Id neque aliquam vestibulum morbi blandit cursus.
+                </p>
+            </article>
+
+        </section>
+
+        <section>
+            <h2>Artículos anidados</h2>
+            <article>
+                <h3>Lorem3</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Convallis a cras semper auctor neque vitae tempus. Etiam erat velit scelerisque in dictum non consectetur a. Odio ut sem nulla pharetra diam sit amet nisl. Nunc aliquet bibendum enim facilisis gravida neque. Sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus. Aenean pharetra magna ac placerat vestibulum lectus. Eget felis eget nunc lobortis mattis aliquam. Sem fringilla ut morbi tincidunt augue interdum velit. Feugiat in fermentum posuere urna nec tincidunt praesent. Pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Odio tempor orci dapibus ultrices in iaculis nunc. Semper viverra nam libero justo laoreet sit. Etiam erat velit scelerisque in dictum non consectetur a erat. Orci ac auctor augue mauris. Neque viverra justo nec ultrices dui sapien.
+                </p>
+                <p>
+                    Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Ut sem nulla pharetra diam sit amet nisl. Gravida neque convallis a cras semper auctor. Quisque id diam vel quam elementum pulvinar. Sit amet consectetur adipiscing elit ut aliquam. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean. Lectus arcu bibendum at varius vel pharetra vel turpis. Amet nisl suscipit adipiscing bibendum est. Est sit amet facilisis magna. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Sollicitudin tempor id eu nisl nunc mi. Placerat in egestas erat imperdiet sed euismod nisi porta. Vitae et leo duis ut. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Tellus in hac habitasse platea dictumst vestibulum rhoncus est. Enim sed faucibus turpis in eu mi bibendum. Eget felis eget nunc lobortis mattis aliquam. Mattis molestie a iaculis at erat pellentesque adipiscing commodo elit. Id neque aliquam vestibulum morbi blandit cursus.
+                </p>
+                <article>
+                    <h4>Lorem4</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Convallis a cras semper auctor neque vitae tempus. Etiam erat velit scelerisque in dictum non consectetur a. Odio ut sem nulla pharetra diam sit amet nisl. Nunc aliquet bibendum enim facilisis gravida neque. Sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus. Aenean pharetra magna ac placerat vestibulum lectus. Eget felis eget nunc lobortis mattis aliquam. Sem fringilla ut morbi tincidunt augue interdum velit. Feugiat in fermentum posuere urna nec tincidunt praesent. Pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Odio tempor orci dapibus ultrices in iaculis nunc. Semper viverra nam libero justo laoreet sit. Etiam erat velit scelerisque in dictum non consectetur a erat. Orci ac auctor augue mauris. Neque viverra justo nec ultrices dui sapien.
+                    </p>
+                    <p>
+                        Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Ut sem nulla pharetra diam sit amet nisl. Gravida neque convallis a cras semper auctor. Quisque id diam vel quam elementum pulvinar. Sit amet consectetur adipiscing elit ut aliquam. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean. Lectus arcu bibendum at varius vel pharetra vel turpis. Amet nisl suscipit adipiscing bibendum est. Est sit amet facilisis magna. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Sollicitudin tempor id eu nisl nunc mi. Placerat in egestas erat imperdiet sed euismod nisi porta. Vitae et leo duis ut. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Tellus in hac habitasse platea dictumst vestibulum rhoncus est. Enim sed faucibus turpis in eu mi bibendum. Eget felis eget nunc lobortis mattis aliquam. Mattis molestie a iaculis at erat pellentesque adipiscing commodo elit. Id neque aliquam vestibulum morbi blandit cursus.
+                    </p>
+
+                </article>
+            </article>
+        </section>
+        <section></section>
+
     </main>
+    <footer>
+        <h2>Pié de Página</h2>
+    </footer>
 </body>
+
 </html>
