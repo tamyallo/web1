@@ -16,19 +16,27 @@
         * {
             color: red;
         }
+
         /* Esto anula y sustituye lo anterior  */
-        
-        h1, h2, h3, h4, h5, h6 {
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             color: black;
         }
-        
-        li, a, p {
+
+        li,
+        a,
+        p {
             color: dimgrey;
         }
-        
-        
-         header h1 {
-            /* La propiedad height establece el alto */ 
+
+
+        header h1 {
+            /* La propiedad height establece el alto */
             height: 50px;
             /* La propiedad padding es el relleno */
             padding: 8px;
@@ -39,6 +47,13 @@
         nav {
             /* Esto es un borde de 1px, liso en color rojo */
             border: 1px solid red;
+        
+            
+        }
+        
+        /* Esto establece la visibilidad en pantalla en ninguna */
+        nav h2 {
+            display: none;
         }
 
         article {
@@ -47,11 +62,37 @@
             /* Esto estable el relleno de todos los article */
             padding: 10px;
             /* Esto estable el margen de todos los article */
+            /* abreviado es margin: 3% 3% 3% 3% */
+            /* Equivale a: el margin top: 3% */
+            /* Equivale a: el margin right: 3% */
+            /* Equivale a: el margin bottom: 3% */
+            /* Equivale a: el margin left: 3% */
             margin: 3%;
             /* Esto estable el borde de todos los article */
             border: 1px solid black;
         }
 
+        /* Esto establece el ancho al 100% para todos los article */
+        /* herederos de otra article herederos de una section */
+        section article article {
+            width: 100%;
+            
+        }
+
+        /* Este código anula y sustituye el anterior */
+        section article {
+            width: 100%;
+            margin-left: 0%;
+            margin-right: 0%;
+            /* Esto es lo mismo */
+            margin: 3% 0%; 
+        
+        }
+
+        article article p {
+            background-color: lime;
+            
+        }
         article,
         article p,
         article h2 {
@@ -61,20 +102,23 @@
             background-color: white
         }
 
+
         footer {
             /* Esto establece el alto del footer en 80px*/
             height: 80px;
-            /* Esto establece el alto de la línea de texto */ 
+            /* Esto establece el alto de la línea de texto */
             /* como le ponemos el mismo que el height */
             /* centramos una línea de texto verticalmente */
             line-height: 80px;
             /* Esto establece el relleno del footer en 10px */
             padding: 10px;
+            /* Esto establece que el texto del footer se alinee en el centro */
             text-align: center;
+            /* Esto establece el color del fondo del footer en negro */
             background-color: black;
+            /* Esto establece el color de texto del footer en blanco */
             color: white;
         }
-
     </style>
 </head>
 
@@ -83,7 +127,7 @@
         <h1>Mis Primeros Estilos</h1>
     </header>
     <nav>
-       <h2>Menú Principal</h2>
+        <h2>Menú Principal</h2>
         <ul>
             <li>
                 <a href="../index.html">Inicio</a>
@@ -142,7 +186,7 @@
         <section>
             <h2>Artículos anidados</h2>
             <article>
-                <h3>Lorem3</h3>
+                <h3>Anidado Lorem 1</h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Convallis a cras semper auctor neque vitae tempus. Etiam erat velit scelerisque in dictum non consectetur a. Odio ut sem nulla pharetra diam sit amet nisl. Nunc aliquet bibendum enim facilisis gravida neque. Sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus. Aenean pharetra magna ac placerat vestibulum lectus. Eget felis eget nunc lobortis mattis aliquam. Sem fringilla ut morbi tincidunt augue interdum velit. Feugiat in fermentum posuere urna nec tincidunt praesent. Pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Odio tempor orci dapibus ultrices in iaculis nunc. Semper viverra nam libero justo laoreet sit. Etiam erat velit scelerisque in dictum non consectetur a erat. Orci ac auctor augue mauris. Neque viverra justo nec ultrices dui sapien.
                 </p>
@@ -150,7 +194,7 @@
                     Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Ut sem nulla pharetra diam sit amet nisl. Gravida neque convallis a cras semper auctor. Quisque id diam vel quam elementum pulvinar. Sit amet consectetur adipiscing elit ut aliquam. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean. Lectus arcu bibendum at varius vel pharetra vel turpis. Amet nisl suscipit adipiscing bibendum est. Est sit amet facilisis magna. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Sollicitudin tempor id eu nisl nunc mi. Placerat in egestas erat imperdiet sed euismod nisi porta. Vitae et leo duis ut. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Tellus in hac habitasse platea dictumst vestibulum rhoncus est. Enim sed faucibus turpis in eu mi bibendum. Eget felis eget nunc lobortis mattis aliquam. Mattis molestie a iaculis at erat pellentesque adipiscing commodo elit. Id neque aliquam vestibulum morbi blandit cursus.
                 </p>
                 <article>
-                    <h4>Lorem4</h4>
+                    <h4>Anidado anidado Lorem 2</h4>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Convallis a cras semper auctor neque vitae tempus. Etiam erat velit scelerisque in dictum non consectetur a. Odio ut sem nulla pharetra diam sit amet nisl. Nunc aliquet bibendum enim facilisis gravida neque. Sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus. Aenean pharetra magna ac placerat vestibulum lectus. Eget felis eget nunc lobortis mattis aliquam. Sem fringilla ut morbi tincidunt augue interdum velit. Feugiat in fermentum posuere urna nec tincidunt praesent. Pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Odio tempor orci dapibus ultrices in iaculis nunc. Semper viverra nam libero justo laoreet sit. Etiam erat velit scelerisque in dictum non consectetur a erat. Orci ac auctor augue mauris. Neque viverra justo nec ultrices dui sapien.
                     </p>
@@ -167,6 +211,4 @@
     <footer>
         <h2>Pié de Página</h2>
     </footer>
-</body>
-
-</html>
+</body></html>
