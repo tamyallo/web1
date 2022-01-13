@@ -1,319 +1,97 @@
 <!DOCTYPE html>
-<html lang=es>
+<html lang="es" dir="LTR">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Apuntes de clase sobre los elementos HTML5 semántico" />
-    <link rel="stylesheet" type="text/css" href="../css/basicos.css">
-    <title>Elementos HTML5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos css</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: pink;
+        }
+        header h1 {
+            height: 50px;
+            padding: 8px;
+            background-color: gray;
+        }
+        nav {
+            border: 1px solid red;
+        }
+        article {
+            width: 40%;
+            padding: 10px;
+            margin: 3%;
+            border: 1px solid black;
+        }
+        article, article p, article h2 {
+            background-color: white
+        }
+        footer {
+            height: 80px;
+            line-height: 80px;
+            padding: 10px;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <a href="../index.html" title="Inicio">
-            <figure>
-                <img src="../IMAGES/logohtml300.jpg" alt="El logotipo de mi Web son los 3 logos de HTML5, CSS Y Javasript" >
-            </figure>
-            <h1>Características HTML5 | 
-            IFCD0110</h1>
-        </a>
+        <h1>Mis Primeros Estilos</h1>
     </header>
     <nav>
-        <h2>Menú Principal</h2>
         <ul>
-            <li>Categorías
-                <ul>
-                    <li>
-                        <a href="html5.html">HTML5</a>
-                    </li>
-                    <li>
-                        <a href="css.html">JavaScript</a>
-                    </li>
-                    <li>
-                        <a href="js.html">Lorem Ipsum</a>
-                    </li>
-                    <li>
-                        <a href="loremipsum.html">CSS</a>
-                    </li>
-                </ul>
+            <li>
+                <a href="../index.html">Inicio</a>
             </li>
             <li>
                 <a href="../PAGES/nosotros.html">Nosotros</a>
             </li>
             <li>
-                <a href="../PAGES/contacto.html">Contacto</a>
+               <a href="../PAGES/contacto.html">Contacto</a> 
             </li>
-            
         </ul>
     </nav>
     <main>
-        <section>
-            <h2>Marcado de Texto</h2>
-            <article>
-                <h3 id="enfasis">Énfasis "em"</h3>
-                <p>
-                     <strong>El elemento em</strong>
-                </p>
-                <p>
-                    Cuando queremos dar énfasis al lenguaje hablado, acentuamos ciertas palabras y así alteramos sutilmente el significado de lo que decimos. <br> De manera similar, en el lenguaje escrito ponemos palabras en cursiva para destacarlas. Por ejemplo, las dos siguientes frases tienen diferente significado:
-                </p>
-                <p>
-                    Me alegro de que no llegues tarde.
-                </p>
-                <p>
-                    Me <em>alegro</em> de que no llegues <em>tarde</em>.
-                </p>
-                <p>
-                    La primera frase suena aliviada porque la persona no llega tarde. Por el contrario, la segunda suena sarcástica y un tanto pasivo-agresiva, expresa molestia porque la persona ha llegado algo tarde.
-                </p>
-            </article>
-            <article>
-                <h3 id="importancia">Importancia "strong"</h3>
-                <p>
-                     <strong>El elemento strong</strong>
-                </p>
-                <p>
-                    Para enfatizar palabras importantes al hablar solemos acentuarlas, y al escribir lo hacemos en estilo negrita. Por ejemplo:
-                </p>
-                <p>
-                    Cuento contigo. <strong>¡No llegues tarde!</strong>
-                </p>
-                <p>
-                    En HTML usamos el elemento strong
-                     (importancia fuerte) para marcar tales expresiones. El documento resulta entonces más útil, y de nuevo los lectores de pantalla reconocen estos elementos y el tono de voz cambia a uno más fuerte.
-                </p>
-            </article>
-            <article>
-                <h3 id="cursiva">Cursiva, negrita y subrayado</h3>
-                <p>
-                    Los elementos  
-                </p>
-                <ul>
-                    <li>
-                        b (negrita o «bold»)
-                    </li>
-                    <li>
-                        i (cursiva o «italic»)
-                    </li>
-                    <li>
-                        u (subrayado o «underline»)
-                    </li>
-                </ul>
-                <p>
-                    surgieron heredados de los lenguajes de marcado de salida por impresora y de las primeras pantallas (fondo negro y letras verdes), cuando apenas se admitía el CSS, para mostrar textos en negrita, cursiva o subrayado.
-                </p>
-                <p>
-                    Elementos como estos, que solo afectan a la presentación y no a la semántica, se conocen como elementos de presentación y <strong>no se deberían</strong> usar porque, como hemos visto, la semántica es muy importante para la accesibilidad y el SEO, entre otros aspectos.
-                </p>
-                <p>
-                    HTML5 redefinió los elementos b, i y u con roles semánticos nuevos confusos, muy específicos y tendentes a desaparecer (si están ya obsoletos): 
-                </p>
-                <ul>
-                    <li>
-                        <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/i" target="_blank">i</a> se redefine para transmitir el significado que tradicionalmente tenía la itálica: extranjerismos, clasificaciones taxonómicas, conceptos técnicos, un pensamiento...
-                    </li>
-                    <li>
-                        <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/b" target="_blank">b</a> se redefine para transmitir el significado que tradicionalmente transmite la negrita: palabras clave, nombres de productos, frases principales...
-                    </li>
-                    <li>
-                        <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/u" target="_blank">u</a> se redefine para transmitir el significado que tradicionalmente conlleva el subrayado: nombres propios, errores ortográficos...
-                    </li>
-                </ul>
-            </article>
-            <article>
-                <h3>Plagiando una wiki</h3>
-                <blockquote cite="https://es.wikipedia.org/wiki/La_casa_de_papel">
-                    <p>
-                        La casa de papel fue una serie de televisión española creada por Álex Pina, producida por Atresmedia en sus inicios, aunque posteriormente por Netflix y con el periodista y guionista Javier Gómez Santander como coproductor ejecutivo. Protagonizada por Úrsula Corberó, Itziar Ituño y Álvaro Morte, se presentó en el III Festival de Televisión de Primavera en Burgos en marzo de 20171 y el 2 de mayo de ese mismo año se estrenó en la cadena española Antena 3. Esta cadena distribuyó las dos primeras partes de la serie en España antes de qué Netflix la adquiriera a finales de 2017 y la editase, reeditase y distribuyese las dos partes por todo el mundo. La serie está inspirada en el protocolo del atracador de bancos Willie Sutton, que concibió más de 100 golpes mediante disfraces y engaños y sin necesidad de disparar a nadie. Eso le reportó dos millones de dólares en las décadas de 1920-1950. 
-                    </p>
-                </blockquote>
-
-                <a href="https://es.wikipedia.org/wiki/La_casa_de_papel">
-                    <cite>La Casa de Papel</cite> de Wikipedia
-                </a>
-
-                <p>
-                    El artículo <cite>La Casa de Papel</cite> de Wikipedia no menciona la frase de Tokyo <q>Como en el ajedrez, hay veces que para ganar es necesario sacrificar una pieza</q>
-                </p>
-
-                <table>
-                    <caption>Ciudades del mundo</caption>
-                    <thead>
-                        <tr>
-                            <th>País</th>
-                            <th>Capital</th>
-                            <th>Otras ciudades</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>España</td>
-                            <td>Madrid</td>
-                            <td>Barcelona, Zaragoza, Sevilla, Valencia, Bilbao</td>
-                        </tr>
-                        <tr>
-                            <td>Francia</td>
-                            <td>París</td>
-                            <td>Lyon, Marsella, Nantes, Toulouse</td>
-                        </tr>
-                        <tr>
-                            <td>Portugal</td>
-                            <td>Lisboa</td>
-                            <td>Oporto, Coimbra</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <table>
-                    <caption>Ranking de Superhéroes</caption>
-                   <thead>
-                        <tr>
-                            <th>Ranking</th>
-                            <th>Superhero</th>
-                            <th>No. of studied feasible powers</th>
-                            <th>No. of weaknesses</th>
-                        </tr>
-                   </thead>
-                   <tbody>
-                       <tr>
-                           <td>#1</td>
-                           <td>Superman</td>
-                           <td>7</td>
-                           <td>1</td>
-                       </tr>
-                       <tr>
-                           <td>#2</td>
-                           <td>Wolverine</td>
-                           <td>4</td>
-                           <td>1</td>
-                       </tr>
-                       <tr>
-                           <td>#3</td>
-                           <td>Thor</td>
-                           <td>3</td>
-                           <td>0</td>
-                       </tr>
-                       <tr>
-                           <td>#4</td>
-                           <td>Mystique</td>
-                           <td>3</td>
-                           <td>1</td>
-                       </tr>
-                       <tr>
-                           <td>#5</td>
-                           <td>The Flash</td>
-                           <td>3</td>
-                           <td>2</td>
-                       </tr>
-                       <tr>
-                           <td>#6</td>
-                           <td>Black Bolt</td>
-                           <td>2</td>
-                           <td>0</td>
-                       </tr>
-                       <tr>
-                           <td>#7</td>
-                           <td>Silver Surfer</td>
-                           <td>2</td>
-                           <td>0</td>
-                       </tr>
-                       <tr>
-                           <td>#8</td>
-                           <td>Spiderman</td>
-                           <td>2</td>
-                           <td>2</td>
-                       </tr>
-                       <tr>
-                           <td>#9</td>
-                           <td>Iron Man</td>
-                           <td>1</td>
-                           <td>1</td>
-                       </tr>
-                       <tr>
-                           <td>#10</td>
-                           <td>The Lizard</td>
-                           <td>1</td>
-                           <td>1</td>
-                       </tr>
-                       <tr>
-                           <td>#11</td>
-                           <td>Iceman</td>
-                           <td>1</td>
-                           <td>1</td>
-                       </tr>
-                       <tr>
-                           <td>#12</td>
-                           <td>Batman</td>
-                           <td>0</td>
-                           <td>2</td>
-                       </tr> 
-                   </tbody>
-                </table>
-            </article>
-            <article>
-                <h3>Aristóteles</h3>
-                <blockquote cite="https://es.wikipedia.org/wiki/Arist%C3%B3teles">
-                    <p>
-                        Aristóteles escribió cerca de 200 obras, de los cuales solo se han conservado 31 (ninguna de ellas destinada a la publicación) en el Corpus Aristotelicum sobre una enorme variedad de temas, entre ellos: lógica, metafísica, filosofía de la ciencia, ética, filosofía política, estética, retórica, física, astronomía y biología. Aristóteles transformó muchas, si no todas, las áreas del conocimiento que abordó. Es reconocido como el padre fundador de la lógica y de la biología, pues si bien existen reflexiones y escritos previos sobre ambas materias, es en el trabajo de Aristóteles, donde se encuentran las primeras investigaciones sistemáticas al respecto.Aristóteles también ha sido llamado el padre de la ciencia política, zoología, embriología, ley natural, método científico, retórica, psicología, realismo, crítica, individualismo, teleología y de la meteorología. 
-                    </p>
-                
-                    <p>
-                        <cite>Aristóteles</cite> poseía una teoría que discurría entre el mundo de las nociones y el mundo sensible, si bien estaba abierto a admitir la existencia de sustancias separadas e inmóviles (como se muestra en la Física y en la Metafísica). Para Aristóteles, Platón <q>separó la sustancia de aquello que es su sustancia</q>, transformando de ese modo lo general (el concepto) en una entidad; duplicando las realidades innecesariamente.
-                    </p>
-                    <p>
-                        En el comienzo del libro IV de la Metafísica, aparece formulada la conocida declaración enfática según la cual <q>hay una ciencia que estudia lo que es, en tanto que algo que es y los atributos que, por sí mismo, le pertenecen</q>.Inmediatamente añade Aristóteles que tal ciencia <q>no se identifica con ninguna de las ciencias particulares, sino que posee el objeto de estudio más extenso y menos comprensible que pueda existir: el ser</q>. 
-                    </p>
-                </blockquote> 
-                <a href="https://es.wikipedia.org/wiki/Arist%C3%B3teles">
-                    <cite>Aristóteles</cite> de Wikipedia
-                </a>    
-            </article>
-            <article>
-                <h3>Ejercicio Imagen</h3>
-                <figure>
-                    <img src="https://images.pexels.com/photos/4819658/pexels-photo-4819658.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Restaurante Trattoria con un arco de flores y jarrones antiguos en la entrada">
-                    <figcaption>Restaurante Trattoria</figcaption>
-                </figure>
-            </article>
-            <article>
-                <h3>Ejercicios Video</h3>
-                <video controls src="https://www.w3schools.com/html/mov_bbb.mp4">
-                    <p>Su navegador no es compatible con Html5. Puede ver este vídeo en una pestaña nueva con este enlace: <a href="https://www.w3schools.com/html/mov_bbb.mp4" title="Ver video conejo y mariposa en pestaña nueva" target="_blank"></a>
-                    </p>
-                </video>
-
-                <video controls poster="../IMAGES/conejoblanco.jpg">
-                    <source src="https://raw.githubusercontent.com/mdn/learning-area/main/html/multimedia-and-embedding/video-and-audio-content/rabbit320.mp4" type="video/mp4">
-                    <source src="https://github.com/mdn/learning-area/blob/main/html/multimedia-and-embedding/video-and-audio-content/rabbit320.webm?raw=true" type="video/webm">
-                    <p>
-                        Su navegador no es compatible con Html5. Puede ver el vídeo en una pestaña nueva en este enlace: <a href="https://raw.githubusercontent.com/mdn/learning-area/main/html/multimedia-and-embedding/video-and-audio-content/rabbit320.mp4" title="ver video conejo" target="_blank"></a>
-                    </p>
-                </video>
-            </article>
-        </section>
-        <aside>
-            <h2>Menú Lateral</h2>
-            <nav>
-                <h3>Menú de Navegación</h3>
-                <ul>
-                    <li>
-                        <a href="#enfasis">Artículo 1</a>
-                    </li>
-                    <li>
-                        <a href="#importancia">Artículo 2</a>
-                    </li>
-                    <li>
-                        <a href="#cursiva">Artículo 3</a>
-                    </li>
-                    
-                </ul>
-            </nav>
-        </aside>
+        <article>
+            <h2>Lorem 1</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Convallis a cras semper auctor neque vitae tempus. Etiam erat velit scelerisque in dictum non consectetur a. Odio ut sem nulla pharetra diam sit amet nisl. Nunc aliquet bibendum enim facilisis gravida neque. Sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus. Aenean pharetra magna ac placerat vestibulum lectus. Eget felis eget nunc lobortis mattis aliquam. Sem fringilla ut morbi tincidunt augue interdum velit. Feugiat in fermentum posuere urna nec tincidunt praesent. Pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Odio tempor orci dapibus ultrices in iaculis nunc. Semper viverra nam libero justo laoreet sit. Etiam erat velit scelerisque in dictum non consectetur a erat. Orci ac auctor augue mauris. Neque viverra justo nec ultrices dui sapien.
+            </p>
+            <p>
+                Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Ut sem nulla pharetra diam sit amet nisl. Gravida neque convallis a cras semper auctor. Quisque id diam vel quam elementum pulvinar. Sit amet consectetur adipiscing elit ut aliquam. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean. Lectus arcu bibendum at varius vel pharetra vel turpis. Amet nisl suscipit adipiscing bibendum est. Est sit amet facilisis magna. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Sollicitudin tempor id eu nisl nunc mi. Placerat in egestas erat imperdiet sed euismod nisi porta. Vitae et leo duis ut. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Tellus in hac habitasse platea dictumst vestibulum rhoncus est. Enim sed faucibus turpis in eu mi bibendum. Eget felis eget nunc lobortis mattis aliquam. Mattis molestie a iaculis at erat pellentesque adipiscing commodo elit. Id neque aliquam vestibulum morbi blandit cursus.
+            </p>
+            
+        </article>
+        <article>
+            <h2>Lorem 2</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Convallis a cras semper auctor neque vitae tempus. Etiam erat velit scelerisque in dictum non consectetur a. Odio ut sem nulla pharetra diam sit amet nisl. Nunc aliquet bibendum enim facilisis gravida neque. Sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus. Aenean pharetra magna ac placerat vestibulum lectus. Eget felis eget nunc lobortis mattis aliquam. Sem fringilla ut morbi tincidunt augue interdum velit. Feugiat in fermentum posuere urna nec tincidunt praesent. Pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Odio tempor orci dapibus ultrices in iaculis nunc. Semper viverra nam libero justo laoreet sit. Etiam erat velit scelerisque in dictum non consectetur a erat. Orci ac auctor augue mauris. Neque viverra justo nec ultrices dui sapien.  
+            </p>
+            <p>
+               Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Ut sem nulla pharetra diam sit amet nisl. Gravida neque convallis a cras semper auctor. Quisque id diam vel quam elementum pulvinar. Sit amet consectetur adipiscing elit ut aliquam. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean. Lectus arcu bibendum at varius vel pharetra vel turpis. Amet nisl suscipit adipiscing bibendum est. Est sit amet facilisis magna. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Sollicitudin tempor id eu nisl nunc mi. Placerat in egestas erat imperdiet sed euismod nisi porta. Vitae et leo duis ut. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Tellus in hac habitasse platea dictumst vestibulum rhoncus est. Enim sed faucibus turpis in eu mi bibendum. Eget felis eget nunc lobortis mattis aliquam. Mattis molestie a iaculis at erat pellentesque adipiscing commodo elit. Id neque aliquam vestibulum morbi blandit cursus. 
+            </p>
+        </article>
+        <article>
+            <h2>Lorem 3</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Convallis a cras semper auctor neque vitae tempus. Etiam erat velit scelerisque in dictum non consectetur a. Odio ut sem nulla pharetra diam sit amet nisl. Nunc aliquet bibendum enim facilisis gravida neque. Sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus. Aenean pharetra magna ac placerat vestibulum lectus. Eget felis eget nunc lobortis mattis aliquam. Sem fringilla ut morbi tincidunt augue interdum velit. Feugiat in fermentum posuere urna nec tincidunt praesent. Pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Odio tempor orci dapibus ultrices in iaculis nunc. Semper viverra nam libero justo laoreet sit. Etiam erat velit scelerisque in dictum non consectetur a erat. Orci ac auctor augue mauris. Neque viverra justo nec ultrices dui sapien.  
+            </p>
+            <p>
+               Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Ut sem nulla pharetra diam sit amet nisl. Gravida neque convallis a cras semper auctor. Quisque id diam vel quam elementum pulvinar. Sit amet consectetur adipiscing elit ut aliquam. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean. Lectus arcu bibendum at varius vel pharetra vel turpis. Amet nisl suscipit adipiscing bibendum est. Est sit amet facilisis magna. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Sollicitudin tempor id eu nisl nunc mi. Placerat in egestas erat imperdiet sed euismod nisi porta. Vitae et leo duis ut. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Tellus in hac habitasse platea dictumst vestibulum rhoncus est. Enim sed faucibus turpis in eu mi bibendum. Eget felis eget nunc lobortis mattis aliquam. Mattis molestie a iaculis at erat pellentesque adipiscing commodo elit. Id neque aliquam vestibulum morbi blandit cursus.   
+            </p>
+        </article>
+        <article>
+            <h2>Lorem 4</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Convallis a cras semper auctor neque vitae tempus. Etiam erat velit scelerisque in dictum non consectetur a. Odio ut sem nulla pharetra diam sit amet nisl. Nunc aliquet bibendum enim facilisis gravida neque. Sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus. Aenean pharetra magna ac placerat vestibulum lectus. Eget felis eget nunc lobortis mattis aliquam. Sem fringilla ut morbi tincidunt augue interdum velit. Feugiat in fermentum posuere urna nec tincidunt praesent. Pharetra magna ac placerat vestibulum lectus mauris ultrices eros. Odio tempor orci dapibus ultrices in iaculis nunc. Semper viverra nam libero justo laoreet sit. Etiam erat velit scelerisque in dictum non consectetur a erat. Orci ac auctor augue mauris. Neque viverra justo nec ultrices dui sapien.   
+            </p>
+            <p>
+               Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Ut sem nulla pharetra diam sit amet nisl. Gravida neque convallis a cras semper auctor. Quisque id diam vel quam elementum pulvinar. Sit amet consectetur adipiscing elit ut aliquam. Amet tellus cras adipiscing enim eu turpis egestas pretium aenean. Lectus arcu bibendum at varius vel pharetra vel turpis. Amet nisl suscipit adipiscing bibendum est. Est sit amet facilisis magna. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Sollicitudin tempor id eu nisl nunc mi. Placerat in egestas erat imperdiet sed euismod nisi porta. Vitae et leo duis ut. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Tellus in hac habitasse platea dictumst vestibulum rhoncus est. Enim sed faucibus turpis in eu mi bibendum. Eget felis eget nunc lobortis mattis aliquam. Mattis molestie a iaculis at erat pellentesque adipiscing commodo elit. Id neque aliquam vestibulum morbi blandit cursus.    
+            </p>
+        </article>
     </main>
-    <footer>
-        <h2>Pié de Página</h2>
-        <p>En construcción...</p>
-    </footer>
 </body>
 </html>
-
-
