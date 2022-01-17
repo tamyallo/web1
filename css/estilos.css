@@ -1,11 +1,11 @@
 @charset "utf8";
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&family=IM+Fell+English+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
 
 /* Selector universal */
 * {
     margin: 0;
     padding: 0;
-    
 }
 
 * {
@@ -22,15 +22,93 @@ h5,
 h6 {
     color: black;
     font-family: 'IM Fell DW Pica', serif;
-
     font-family: 'IM Fell English SC', serif;
 }
 
+
+/*Tipo de textos*/
+/* font family importada de google fonts */
+p,
+em,
+strong,
 li,
-a,
-p {
+a {
+    font-family: 'Montserrat', Helvetica, sans-serif;
     color: dimgrey;
+    font-size: 16px;
 }
+
+/* font weight establece la anchura de la letra */
+a {
+    font-weight: bold;
+    color: steelblue;
+}
+
+/* font-style establece el estilo de la letra */
+em {
+    font-style: italic;
+}
+
+/* font-variant */
+.todomayusculas {
+    font-variant: small-caps;
+}
+
+.pepe {
+    color: green;
+}
+
+.alineadoderecha {
+    text-align: right;
+}
+
+.alineadocentro {
+    text-align: center;
+}
+
+.alineadojustificado {
+    text-align: justify;
+}
+
+/* ------------------------------*/
+/* Prioridades*/
+/* ------------------------------*/
+
+/* El selector de id es la almohadilla # */
+/* #violeta {color: darkviolet; }
+article ol li { color: blue; }
+*/
+
+#violeta {
+    color: darkviolet;
+}
+
+.rosa {
+    color: pink;
+}
+
+article ol li {
+    color: blue;
+}
+
+li {
+    color: tomato;
+
+}
+
+table.azul th,
+table.azul td {
+    border: 1px solid blue;
+    color: blue;
+}
+
+table.azul th {
+    background: blue;
+    color: white;
+
+}
+
+
 
 
 header h1 {
@@ -118,3 +196,7 @@ footer {
     /* Esto establece el color de texto del footer en blanco */
     color: white;
 }
+
+/* etiqueta es {} */
+/* las class es un punto .{} */
+/* las id es # {} */
