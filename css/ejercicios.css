@@ -1,0 +1,44 @@
+article.ej2 #titulo {
+    color: teal;
+}
+
+article.ej2 p strong,
+article.ej2 a,
+article.ej2 th {
+    color: red;
+}
+
+
+article.ej2 span.destacado,
+article.ej2 .especial,
+article.ej2 td strong {
+    color: orange;
+}
+
+article.ej2 #subtitulo,
+article.ej2 p em,
+article.ej2 table caption {
+    color: blue;
+}
+
+article.ej2 span.especial {
+    color: purple;
+}
+
+article.ej2 th,
+article.ej2 td {
+    border: 1px solid black;
+}
+
+article.ej2 td,
+article.ej2 #adicional a {
+    color: green;
+}
+
+article.ej2 #adicional {
+    color: olive;
+}
+
+article.ej2 #especial {
+    color: fuchsia;
+}
